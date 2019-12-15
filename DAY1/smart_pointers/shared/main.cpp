@@ -36,6 +36,9 @@ int main(){
     //shared pointer can have an alias
     //a reference counter is kept and the memory is only freed when the reference counter is zero
     //The dynamic memory allocated in the heap is freed when the last object goes out of scope
+
+    //weak pointer on the other hand is can be used to check if the pointer is still valid
+    //Memory will be freed even if the weak pointer is still within scope
     
     std::shared_ptr<Person> person = std::make_shared<Person>("Mcleans","Male",24);
 
@@ -45,6 +48,8 @@ int main(){
 
     std::cout<<"Details => "<<candidate->get_name()<<" "<<candidate->get_gender()<<" "<<candidate->get_age()<<std::endl;
     
+    std::weak_ptr<Person> winner = person;
+
 
     }
 
