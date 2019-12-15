@@ -30,7 +30,7 @@ class User{
         std::string get_residence();
         void set_residence(std::string residence);
 
-        ~user();
+        ~User();
 };
 
 
