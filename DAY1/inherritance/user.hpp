@@ -24,11 +24,13 @@ class User{
         std::string get_name();
         void set_name(std::string first_name,
                             std::string last_name);
-        int get_age():
+        int get_age();
         void set_age(int age);
 
         std::string get_residence();
         void set_residence(std::string residence);
+
+        ~user();
 };
 
 
