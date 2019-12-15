@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -c -Wall --std=c++17
 LFLAGS = -Wall
-OBJS = main.o staff.o user.o students.o 
+OBJS = main.o staff.o user.o student.o 
 
 all : $(OBJS) 
 	$(CC) $(LFLAGS) $(OBJS) -o main
@@ -21,5 +21,5 @@ student.o : student.cpp student.hpp
 clean: 
 	rm *.o main
 
-run :
+run:
 	./main
