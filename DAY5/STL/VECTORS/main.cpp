@@ -82,6 +82,8 @@ int main(int argc , char *argv[]){
 
     print_vector(my_vect);
 
+    //erase function -> erase(itr) 
+
   
 
     
