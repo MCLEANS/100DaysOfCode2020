@@ -37,5 +37,18 @@ int main(int argc , char **argv){
     for(itr3 = my_vector.begin(); itr3 != my_vector.end(); itr3++){
         std::cout<<*itr3<<std::endl;
     }
+
+    //erase data from a vector
+    //erase(iterator)  or erase(iterator begin, iterator end)
+    std::vector<std::string>::iterator itr4;
+    itr4 = my_vector.begin() + 1;
+    my_vector.erase(itr4);
+
+    //check if the element was succesfully deleted
+    std::vector<std::string>::iterator itr5;
+    std::cout<<"\n\n"<<std::endl;
+    for(itr5 = my_vector.begin(); itr5 != my_vector.end(); itr5++){
+        std::cout<<*itr5<<std::endl;
+    }
     return 0;
 }
