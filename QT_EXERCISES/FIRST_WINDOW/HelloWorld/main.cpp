@@ -5,5 +5,6 @@ int main(int argc, char **argv){
 
     QApplication app(argc,argv);
     QPushButton button("HELLO WORLD");
+    button.show();
     return app.exec();
 }
