@@ -23,5 +23,19 @@ int main(int argc, char **argv){
     }
 
     std::cout<<"\n----------------------------------------\n";
+
+    //METHOD 3
+    std::string *pstart = names;
+    std::string *pend = &names[2];
+
+    while(true){
+        std::cout<<*pstart<<" "<<std::flush;
+        
+
+        if(pstart == pend) break;
+        pstart++;
+    }
+
+     std::cout<<"\n----------------------------------------\n";
     return 0;
 }
