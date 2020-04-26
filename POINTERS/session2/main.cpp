@@ -14,5 +14,14 @@ int main(int argc, char **argv){
         std::cout<<names[i]<<" "<<std::flush;
     }
     std::cout<<"\n----------------------------------------\n";
+
+    //METHOD 2
+
+    std::string *pnames = names;
+    for(int i = 0; i < elements; i++){
+        std::cout<<pnames[i]<<" "<<std::flush;
+    }
+
+    std::cout<<"\n----------------------------------------\n";
     return 0;
 }
