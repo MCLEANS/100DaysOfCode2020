@@ -10,14 +10,11 @@ class Student : public Person{
         std::string registration_number;
         std::string school;
         std::string department:
-        std::stirng course;
+        std::string course;
     public:
     public:
 
-        Student(std::string first_name,
-                std::string last_name,
-                int age,
-                Gender gender));
+        Student();
 
         Student(std::string registration_number,
                 std::string school,
@@ -36,7 +33,7 @@ class Student : public Person{
         std::string get_department(void) const;
         void set_course(std::string course);
         std::string get_course(void) const;
-        
+
         ~Student();
 };
 
