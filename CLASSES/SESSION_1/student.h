@@ -9,8 +9,10 @@ class Student : public Person{
     private:
         std::string registration_number;
         std::string school;
-        std::string department:
+        std::string _department;
         std::string course;
+
+        
     public:
     public:
 
@@ -26,7 +28,7 @@ class Student : public Person{
                 Gender gender);
 
         void set_registration_number(std::string registration_number);
-        std::string get-registration_number(void) const;
+        std::string get_registration_number(void) const;
         void set_school(std::string school);
         std::string get_school(void) const;
         void set_department(std::string department);
