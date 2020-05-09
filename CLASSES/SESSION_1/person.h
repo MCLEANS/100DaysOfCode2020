@@ -12,6 +12,9 @@ class Person{
     private:
     private:
     public:
+
+        static int count ;
+
         std::string first_name;
         std::string last_name;
         int age;
