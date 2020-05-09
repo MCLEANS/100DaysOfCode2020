@@ -1,8 +1,9 @@
 #include <iostream>
+#include "person.h"
 
 int main(int agrc, char * argv[]){
-
-    std::cout<<"HELLO WORLD"<<std::endl;
+    Person head_teacher("Jack","Mcleans",24,MALE);
+   
 
     return 0;
 }
