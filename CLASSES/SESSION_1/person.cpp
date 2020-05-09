@@ -1,7 +1,11 @@
 #include "person.h"
 
+int Person::count = 0;
+
 Person::Person(){
-    std::cout<<"created new person"<<std::endl;
+    count++;
+    std::cout<<"created new person: "<<count<<std::endl;
+    
 }
 
 Person::Person(std::string first_name,
@@ -11,8 +15,9 @@ Person::Person(std::string first_name,
                                 last_name(last_name),
                                 age(age),
                                 gender(gender){
-
-    std::cout<<"created new person"<<std::endl;
+    count++;    
+    std::cout<<"created new person: "<<count<<std::endl;
+  
 }
 
 void Person::set_first_name(std::string first_name){
