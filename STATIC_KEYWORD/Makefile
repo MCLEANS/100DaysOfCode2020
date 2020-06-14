@@ -13,4 +13,4 @@ run :
 	./main 
 
 clean :
-	*.o main
+	rm *.o main
