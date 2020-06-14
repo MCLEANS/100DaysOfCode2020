@@ -13,7 +13,7 @@ int main(void){
     Test test3;
     }
 
-    std::cout<<Test::count<<std::endl;
+    Test::show_count();
 
     return 0;
 }

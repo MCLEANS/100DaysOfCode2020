@@ -9,3 +9,7 @@ Test::Test(){
 Test::~Test(){
     count--;
 }
+
+void Test::show_count(){
+    std::cout<<count<<std::endl;
+}
