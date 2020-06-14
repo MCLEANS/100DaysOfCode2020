@@ -3,7 +3,7 @@
 int Test::count = 0;
 
 Test::Test(){
-    count++;
+   id =  count++;
 }
 
 Test::~Test(){

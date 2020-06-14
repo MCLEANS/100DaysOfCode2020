@@ -9,6 +9,8 @@ class Test{
         static int count;
     private:
     public:
+        int id;
+
         
     public:
         Test();

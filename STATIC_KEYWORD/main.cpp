@@ -9,11 +9,12 @@ int main(void){
 
     Test test1;
     Test test2;
-    {
     Test test3;
-    }
 
-    Test::show_count();
+    std::cout<<"Test 1 id: "<<test1.id<<std::endl;
+    std::cout<<"Test 2 id: "<<test2.id<<std::endl;
+    std::cout<<"Test 3 id: "<<test3.id<<std::endl;
+    
 
     return 0;
 }
